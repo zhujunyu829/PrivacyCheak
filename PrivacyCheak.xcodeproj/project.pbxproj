@@ -15,6 +15,9 @@
 		D988A7B720E47A6900AD207F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D988A7B620E47A6900AD207F /* main.m */; };
 		D988A7C120E47A6A00AD207F /* PrivacyCheakTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D988A7C020E47A6A00AD207F /* PrivacyCheakTests.m */; };
 		D988A7CC20E47A6A00AD207F /* PrivacyCheakUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D988A7CB20E47A6A00AD207F /* PrivacyCheakUITests.m */; };
+		D988A7DF20E48B5D00AD207F /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D988A7DE20E48B5C00AD207F /* CoreTelephony.framework */; };
+		D9FF96DD20E4C49E00E06DFA /* UIViewController+PrivacyCheak.m in Sources */ = {isa = PBXBuildFile; fileRef = D988A7DB20E47AF100AD207F /* UIViewController+PrivacyCheak.m */; };
+		D9FF96DF20E4E5E400E06DFA /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9FF96DE20E4E5E400E06DFA /* Contacts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,10 @@
 		D988A7C720E47A6A00AD207F /* PrivacyCheakUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrivacyCheakUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D988A7CB20E47A6A00AD207F /* PrivacyCheakUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrivacyCheakUITests.m; sourceTree = "<group>"; };
 		D988A7CD20E47A6A00AD207F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D988A7DA20E47AF100AD207F /* UIViewController+PrivacyCheak.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PrivacyCheak.h"; sourceTree = "<group>"; };
+		D988A7DB20E47AF100AD207F /* UIViewController+PrivacyCheak.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PrivacyCheak.m"; sourceTree = "<group>"; };
+		D988A7DE20E48B5C00AD207F /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		D9FF96DE20E4E5E400E06DFA /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9FF96DF20E4E5E400E06DFA /* Contacts.framework in Frameworks */,
+				D988A7DF20E48B5D00AD207F /* CoreTelephony.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +94,7 @@
 				D988A7BF20E47A6A00AD207F /* PrivacyCheakTests */,
 				D988A7CA20E47A6A00AD207F /* PrivacyCheakUITests */,
 				D988A7A520E47A6000AD207F /* Products */,
+				D988A7DD20E48B5C00AD207F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +111,7 @@
 		D988A7A620E47A6000AD207F /* PrivacyCheak */ = {
 			isa = PBXGroup;
 			children = (
+				D988A7D920E47AA400AD207F /* PrivacyCheak */,
 				D988A7A720E47A6000AD207F /* AppDelegate.h */,
 				D988A7A820E47A6000AD207F /* AppDelegate.m */,
 				D988A7AA20E47A6000AD207F /* ViewController.h */,
@@ -130,6 +141,24 @@
 				D988A7CD20E47A6A00AD207F /* Info.plist */,
 			);
 			path = PrivacyCheakUITests;
+			sourceTree = "<group>";
+		};
+		D988A7D920E47AA400AD207F /* PrivacyCheak */ = {
+			isa = PBXGroup;
+			children = (
+				D988A7DA20E47AF100AD207F /* UIViewController+PrivacyCheak.h */,
+				D988A7DB20E47AF100AD207F /* UIViewController+PrivacyCheak.m */,
+			);
+			path = PrivacyCheak;
+			sourceTree = "<group>";
+		};
+		D988A7DD20E48B5C00AD207F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9FF96DE20E4E5E400E06DFA /* Contacts.framework */,
+				D988A7DE20E48B5C00AD207F /* CoreTelephony.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9FF96DD20E4C49E00E06DFA /* UIViewController+PrivacyCheak.m in Sources */,
 				D988A7AC20E47A6000AD207F /* ViewController.m in Sources */,
 				D988A7B720E47A6900AD207F /* main.m in Sources */,
 				D988A7A920E47A6000AD207F /* AppDelegate.m in Sources */,
@@ -434,7 +464,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LN5Z4LQL2H;
 				INFOPLIST_FILE = PrivacyCheak/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,7 +482,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LN5Z4LQL2H;
 				INFOPLIST_FILE = PrivacyCheak/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
