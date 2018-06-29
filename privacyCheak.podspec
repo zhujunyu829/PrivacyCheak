@@ -117,7 +117,7 @@ Pod::Spec.new do |s|
   #
 
   # s.framework  = "SomeFramework"
- s.frameworks = "EventKit", "Photos",@"AVFoundation",@"Contacts",@"CoreLocation",@"UIKit"
+ s.frameworks = "EventKit", "Photos","AVFoundation","Contacts","CoreLocation","UIKit"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
