@@ -11,7 +11,6 @@
 #import <Contacts/Contacts.h>
 #import <CoreLocation/CoreLocation.h>
 #import <EventKit/EventKit.h>
-#import <CoreBluetooth/CoreBluetooth.h>
 
 @implementation UIViewController (PrivacyCheak)
 
