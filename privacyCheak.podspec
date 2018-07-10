@@ -24,8 +24,7 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = 一个授权检测工具类<<-DESC
-                   DESC
+  s.description  = "一个授权检测工具类，方便、快捷、简单。"
 
  s.homepage     = "https://github.com/zhujunyu829/privacyCheak"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -63,7 +62,7 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # s.platform     = :ios
+   s.platform     = :ios
    s.platform     = :ios, "9.0"
 
   #  When using multiple platforms
@@ -117,7 +116,7 @@ Pod::Spec.new do |s|
   #
 
   # s.framework  = "SomeFramework"
- s.frameworks = "EventKit", "Photos","AVFoundation","Contacts","CoreLocation","UIKit"
+ s.frameworks = "EventKit", "Photos","AVFoundation","Contacts","CoreLocation","UIKit", "Foundation"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
